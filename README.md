@@ -1,7 +1,7 @@
 # my-problems
 记录问题
 
-小数四舍五入至整数
+1.小数四舍五入至整数
 
 
 ```javascript
@@ -10,7 +10,7 @@ function toSmallRounding(nums) {
 }
 ```
 
-倒计时切换至后台后会被暂停的问题：
+2.倒计时切换至后台后会被暂停的问题：
 
 由于倒计时是基于requestAnimationFrame进行开发的，而在大多数浏览器里，当requestAnimationFrame() 运行在后台标签页或者隐藏的<iframe> 里时，requestAnimationFrame() 会被暂停调用以提升性能和电池寿命，所以会导致该问题。
 
@@ -49,3 +49,8 @@ document.addEventListener("visibilitychange", handleVisibilityChange, false);
 
 [`EventListener`](https://developer.mozilla.org/zh-CN/docs/Web/API/EventListener) 提供在`visibilitychange (en-US)` 事件被触发时要调用的代码。
 
+3.手机号正则校验
+const reg = /^1[3-9]\d{9}$/;
+reg.test(mobile);
+
+4.H5拉起微信小程序（待解决）
